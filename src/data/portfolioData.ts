@@ -1,4 +1,7 @@
 import { ProjectItem, ExperienceItem, EducationItem, SkillCategory, CertificateItem } from '../types/portfolio';
+import heroEngineerWorkspaceImg from '../assets/images/hero_engineer_workspace_1790567682956.jpg';
+import projectStockLstmImg from '../assets/images/project_stock_lstm_1790567701348.jpg';
+import projectAutocanEvImg from '../assets/images/project_autocan_ev_1790567718924.jpg';
 
 export const PERSONAL_INFO = {
   name: 'Anthony Suman A',
@@ -9,7 +12,7 @@ export const PERSONAL_INFO = {
   linkedin: 'https://linkedin.com/in/anthony-suman-a',
   portfolioUrl: 'https://itzfizz-assignment-omega.vercel.app/',
   location: 'Bengaluru, India',
-  heroImage: '/src/assets/images/hero_engineer_workspace_1790567682956.jpg',
+  heroImage: heroEngineerWorkspaceImg,
   about: `I am a Computer Science student specializing in Artificial Intelligence and Machine Learning at CHRIST (Deemed to be University). I bridge algorithmic data science with production-grade engineering—from training LSTM neural networks for financial time-series forecasting to sniffing automotive CAN bus frames in e-mobility labs, to crafting high-performance full-stack web applications. I am passionate about solving real-world challenges with hands-on technical rigor.`,
   stats: [
     { label: 'Projects Built', value: '7+' },
@@ -35,7 +38,7 @@ export const PROJECTS: ProjectItem[] = [
       'Achieved low RMSE & MAE error metrics with 60-day historical lookback sliding windows'
     ],
     techStack: ['Python', 'TensorFlow', 'Keras', 'Pandas', 'NumPy', 'yfinance', 'Streamlit', 'Matplotlib'],
-    imageSrc: '/src/assets/images/project_stock_lstm_1790567701348.jpg',
+    imageSrc: projectStockLstmImg,
     githubUrl: 'https://github.com/anthonysumana/stock-price-prediction-lstm',
     demoType: 'stock-lstm',
     metrics: [
@@ -59,7 +62,7 @@ export const PROJECTS: ProjectItem[] = [
       'Achieved sub-15ms packet latency with real-time bus load and baud rate diagnostics'
     ],
     techStack: ['Embedded C', 'CAN Protocol', 'Android', 'Java/Kotlin', 'OBD-II', 'Python', 'Vehicle Bus Analysis'],
-    imageSrc: '/src/assets/images/project_autocan_ev_1790567718924.jpg',
+    imageSrc: projectAutocanEvImg,
     githubUrl: 'https://github.com/anthonysumana/autocan-vehicle-control',
     demoType: 'autocan',
     metrics: [

@@ -198,6 +198,15 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                             alt={project.title}
                             className="w-full h-full object-cover"
                             referrerPolicy="no-referrer"
+                            onError={(e) => {
+                              const target = e.currentTarget;
+                              const fallback = project.id === 'stock-lstm'
+                                ? '/images/project_stock_lstm.jpg'
+                                : '/images/project_autocan_ev.jpg';
+                              if (!target.src.includes(fallback)) {
+                                target.src = fallback;
+                              }
+                            }}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                           <div className="absolute bottom-2 left-2 text-[10px] font-mono text-emerald-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">

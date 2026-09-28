@@ -95,6 +95,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 alt="Anthony Suman A - AI Workspace and Research Setup"
                 className="w-full h-80 sm:h-96 object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('hero_engineer_workspace.jpg')) {
+                    target.src = '/images/hero_engineer_workspace.jpg';
+                  }
+                }}
               />
 
               {/* Contrast Scrim */}
